@@ -1,0 +1,34 @@
+<form action="<?=base_url('siswa/tambah_aksi')?>" method="POST">
+    <div class="form-group">
+        <label>Nama Siswa</label>
+        <input type='text' name='nama_Siswa' class='form-control'>
+        <?= form_error('nama_Siswa','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <div class="form-group">
+        <label>Kelas Siswa</label>
+        <input type='text' name='kelas' class='form-control'>
+        <?= form_error('kelas','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <div class="form-group">
+        <label>Umur</label>
+        <input type='text' name='umur' class='form-control'>
+        <?= form_error('umur','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <div class="form-group">
+        <label>Nomor telepon</label>
+        <input type='text' name='no_telp' class='form-control'>
+        <?= form_error('no_telp','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <div class="form-group">
+        <label>Alamat rumah</label>
+        <textarea name='alamat_rumah' class='form-control'></textarea>
+        <?= form_error('alamat_rumah','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <div class="form-group">
+        <label>Jenis kelamin</label>
+        <input type='text' name='jenis_kelamin' class='form-control'>
+        <?= form_error('jenis_kelamin','<div class="text-small text-danger">','</div>');?>
+    </div>
+    <button type='submit' class="btn btn-primary btn-sm"><i class="fas fa-save"></i>Simpan</button>
+    <button type='reset' class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Reset</button>
+</form>
